@@ -17,11 +17,8 @@
       h2{
         text-align:center;
       }
-
       .saw {
         color : gray;
-      }
-      #active{
         text-decoration:underline;
       }
       #TopMenu {
@@ -47,21 +44,25 @@
         font-family: "Trebuchet MS", Dotum, Arial;
         padding-left: 100px;
       }
-      #TopMenu .Menulink : hover { <!--topMenu 아이디를 가진 태그 안에 menuLink클래스를 가진 태그에 마우스가 over되면 스타일 설정-->
+      #TopMenu .Menulink:hover {
         background -color: #000000;
 
+        color: gray;
       }
     </style>
     <title>우리누리의 축제정보</title>
   <body>
     <h1> <a href="home.html">우리누리 축제정보</a> </h1>
+    <nav id = "TopMenu">
+      <ol>
+        <li><a class="Menulink" href="소개.html">소개</a></li>
+        <li><a class="Menulink" href="검색.html">검색</a></li>
+        <li><a class="Menulink" href="캘린더.html">캘린더</a></li>
+      </ol>
+    </nav>
+    <h2>소개</h2>
 
-    <ol>
-      <li><a class="saw" id = "active" href="소개.html">소개</a></li>
-      <li><a href="검색.html">검색</a></li>
-      <li><a href="캘린더.html">캘린더</a></li>
 
-    </ol>
-    <h2>캘린더</h2>
+
     <img src="festival.jpg" width="100%">
   </body>
