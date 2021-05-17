@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <style>
+    body{
+      background-color: #F7F8E0;
+    }
       a {
         color: black;
         text-decoration: none;
@@ -16,6 +19,7 @@
       }
       h2{
         text-align:center;
+        font-family: "jua";
       }
       .saw {
         color : gray;
@@ -28,7 +32,7 @@
       #TopMenu ol li {
         list-style: none;
         color: white;
-        background-color: #2d2d2d;
+        background-color: #CEECF5;
         float: left;
         line-height: 30px;
         vertical-align: middle;
@@ -49,11 +53,21 @@
 
         color: gray;
       }
+      @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+      .jua-font{ <!-- 클래스로 묶어주기-->
+        font-family: 'Nanum Gothic', sans-serif;
+        color : orange;
+      }
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+      .Popular_pairings {
+        font-family: 'Roboto', sans-serif;
+      }
     </style>
 
     <title>우리누리의 축제정보</title>
   <body>
-    <h1> <a href="home.html">우리누리 축제정보</a> </h1>
+    <h1 class="jua-font"> <a href="home.html">우리누리 축제정보</a> </h1>
     <nav id = "TopMenu">
       <ol>
         <li><a class="Menulink" href="소개.html">소개</a></li>
@@ -61,7 +75,7 @@
         <li><a class="Menulink" href="캘린더.html">캘린더</a></li>
       </ol>
     </nav>
-    <h2> Festival Information Service </h2>
+    <h2 class = "Popular_pairings"> Festival Information Service </h2>
     <img style="padding-left: 100px;" src="C:\Users\Yeomyaloo\Desktop\Programming\Web\캡스톤디자인\이미지\festival.jpg" width=90%>
     <img style="padding-left: 100px;" src="C:\Users\Yeomyaloo\Desktop\Programming\Web\캡스톤디자인\이미지\festival2.jpg" width="90%">
   </body>
