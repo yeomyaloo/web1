@@ -2,72 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <style>
-    body{
-      background-color: #F7F8E0;
-    }
-      a {
-        color: black;
-        text-decoration: none;
-      }
-      h1 {
-        text-align:center ;
-        font-size: 80px;
-        color: black;
-        margin:10px;
-        color: gray;
-      }
-      h2{
-        text-align:center;
-        font-family: "jua";
-      }
-      .saw {
-        color : gray;
-        text-decoration:underline;
-      }
-      #TopMenu {
-        height: 30px;
-        width: 2000px;
-      }
-      #TopMenu ol li {
-        list-style: none;
-        color: white;
-        background-color: #CEECF5;
-        float: left;
-        line-height: 30px;
-        vertical-align: middle;
-        text-align: center;
-      }
-      #TopMenu .Menulink {
-        text-decoration:none;
-        color: white;
-        display: block;
-        width: 500px;
-        font-size: 12px;
-        font-weight: bold;
-        font-family: "Trebuchet MS", Dotum, Arial;
-        padding-left: 100px;
-      }
-      #TopMenu .Menulink:hover {
-        background -color: #000000;
-
-        color: gray;
-      }
-      @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
-
-      .jua-font{ <!-- 클래스로 묶어주기-->
-        font-family: 'Nanum Gothic', sans-serif;
-        color : orange;
-      }
-        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-      .Popular_pairings {
-        font-family: 'Roboto', sans-serif;
-      }
-    </style>
-
+    <link rel="stylesheet" href="CSSStyle.css">
     <title>우리누리의 축제정보</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <body>
-    <h1 class="jua-font"> <a href="home.html">우리누리 축제정보</a> </h1>
+    <h1> <a href="home.html">우리누리 축제정보</a> </h1>
     <nav id = "TopMenu">
       <ol>
         <li><a class="Menulink" href="소개.html">소개</a></li>
@@ -76,6 +16,70 @@
       </ol>
     </nav>
     <h2 class = "Popular_pairings"> Festival Information Service </h2>
-    <img style="padding-left: 100px;" src="C:\Users\Yeomyaloo\Desktop\Programming\Web\캡스톤디자인\이미지\festival.jpg" width=90%>
-    <img style="padding-left: 100px;" src="C:\Users\Yeomyaloo\Desktop\Programming\Web\캡스톤디자인\이미지\festival2.jpg" width="90%">
+
+    <div class="section">
+    	<input type="radio" name="slide" id="slide01" checked>
+    	<input type="radio" name="slide" id="slide02">
+    	<input type="radio" name="slide" id="slide03">
+    	<div class="slidewrap">
+
+    		<ul class="slidelist">
+    			<!-- 슬라이드 영역 -->
+    			<li class="slideitem">
+    				<a>
+    					<div class="textbox">
+    						<h3 style="color:pink">환영합니다!!</h3>
+    						<p style="color:pink">우리누리가 축제정보에 대한 모든 것을 알려드리도록 하겠습니다.</p>
+    					</div>
+    					<img src="C:\Users\Yeomyaloo\Desktop\Programming\Web\캡스톤디자인\이미지\festival.jpg">
+    				</a>
+    			</li>
+    			<li class="slideitem">
+    				<a>
+
+    					<div class="textbox">
+    						<h3 style="color:pink">다양한 지역축제</h3>
+    						<p style="color:pink">축제의 즐거움을 함께해요.</p>
+    					</div>
+    					<img src="C:\Users\Yeomyaloo\Desktop\Programming\Web\캡스톤디자인\이미지\festival2.jpg">
+    				</a>
+    			</li>
+    			<li class="slideitem">
+    				<a>
+
+    					<div class="textbox">
+    						<h3 style="color:pink">코로나로 인한 언택드 축제</h3>
+    						<p style="color:pink">모두 여러분에게 소개해드리겠습니다.</p>
+    					</div>
+    					<img src="C:\Users\Yeomyaloo\Desktop\Programming\Web\캡스톤디자인\이미지\festival3.jpg">
+    				</a>
+    			</li class="slideitem">
+
+    			<!-- 좌,우 슬라이드 버튼 -->
+    			<div class="slide-control">
+    				<div>
+    					<label for="slide03" class="left"></label>
+    					<label for="slide02" class="right"></label>
+    				</div>
+    				<div>
+    					<label for="slide01" class="left"></label>
+    					<label for="slide03" class="right"></label>
+    				</div>
+    				<div>
+    					<label for="slide02" class="left"></label>
+    					<label for="slide01" class="right"></label>
+    				</div>
+    			</div>
+
+    		</ul>
+    		<!-- 페이징 -->
+    		<ul class="slide-pagelist">
+    			<li><label for="slide01"></label></li>
+    			<li><label for="slide02"></label></li>
+    			<li><label for="slide03"></label></li>
+    		</ul>
+    	</div>
+
+
+    </div>
   </body>
