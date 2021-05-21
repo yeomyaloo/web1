@@ -16,15 +16,18 @@
     font-family: "jua";
   }
   h2{
-    text-align:center;
+    text-align: center;
     font-family: "jua";
   }
+
   .textbox {
     font-family: "jua";
   }
   #TopMenu {
     height: 30px;
     width: 2000px;
+
+
   }
   #TopMenu ol li {
     list-style: none;
