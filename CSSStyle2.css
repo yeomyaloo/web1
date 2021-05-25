@@ -54,9 +54,20 @@
 
   #MiddleMenu .Menulink2 {
     text-decoration:none;
-    width: 200px;
 
   }
+#MiddleMenu ul{
+  padding-top: 100px;
+  padding-left: 50px;
+}
+
+  #MiddleMenu ul li {
+    list-style: none;
+    width: 400px;
+
+
+  }
+
   <!--폰트부분-->
 @font-face {
   src: url("../Fonts/jua-Regular.ttf");
