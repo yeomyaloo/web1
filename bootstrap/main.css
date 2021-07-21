@@ -48,3 +48,7 @@ header{
   background-repeat: no-repeat;
   height: 800px;
 }
+.copyright a{
+  text-decoration: none;
+   
+}
