@@ -50,5 +50,13 @@ header{
 }
 .copyright a{
   text-decoration: none;
-   
+
+}
+.bd-placeholder-img{
+
+}
+/*중단부분 현재페이지에서 다른 페이지로 넘어가는 부분의 이미지를 이미지 자체 설정해놓은 크기로 설정하는 */
+.ab_row img{
+  object-fit: none;
+
 }
