@@ -1,0 +1,22 @@
+/*여기부터 about에 관한 css입니다.*/
+.mainbody {
+  margin-top: 30px;
+}
+.position-relative{
+  top: 100px;
+}
+#topmainbody {
+  background-color: #c5d6db;
+}
+a:hover,
+a:focus {
+
+  background-color: #fff;
+  border-color: #fff;
+  color: #ffd3d7;
+}
+a{
+   background-color: #ffd3d7;
+   border-color: #ffd3d7;
+   color: #FFF;
+}
