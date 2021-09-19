@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>우리누리</title>
+<style>
+#date_button .data_button2{
+    border-radius:50%;
+    width:70px;
+    height:70px;
+    background:#FFD3D7;
+  }
+#date_button .data_button2 a{
+  text-align:center;
+  line-height:70px;
+  text-decoration: none;
+  color: white;
+}
+#footer.row a:hover {text-decoration: underline;}
+#footer.row a {color: #D6D3D3;}
+#footer.row a:link {text-decoration: none;}
+#no-acm-icpc{
+  background-color:#red;
+  margin-bottom: 0px;
+  padding-bottom: 16px;
+  padding-top: 5px;
+  background-color:#2a2f33;
+  text-decoration-style: solid;
+}
+#footer.container{
+  height:100px;
+  width:100%;
+  background-color:#FFF;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+}
+
+
+#footer-wrap li,
+#footer-wrap p{
+color: #959ca0;
+
+}
+
+.copyright{
+  background-color:#353c41;
+
+}
+
+.buttona{
+  text-decoration: none;
+  color: white;
+
+}
+.buttona:hover{
+  color: black;
+}
+
+</style>
+
+<link rel="stylesheet" type="text/css" href="static/source/datetimepicker/jquery.datetimepicker.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="static/source/csscode/style.css">
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+
+  <!--상단 메뉴-->
+  <header> <!--fixed-top 고정을 원한다면 navbar 클래스에 적어주면 됨-->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFFFFF; padding-left: 200px; padding-right: 200px;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/"><img src="static/image/LOGO2.png" alt="우리누리" width="180px" height="100%" class="d-inline-block align-text-top"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/" style="margin-right:100px;font-size:20px;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/search" style="margin-right:100px;font-size:20px;">Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/calendar" style="margin-right:100px; font-size:20px;">Calendar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" style="margin-right:100px;font-size:20px;">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about" style="margin-right:100px; font-size:20px;">About</a>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+  </header>
+  <!--상단 고정메뉴바 끝-->
+
+<main>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="static/css/index.css"> -->
+  <div class="container px-4 py-5" id="custom-cards">
+      <h2 class="pb-2 border-bottom">Festival schedule</h2>
+  <!--원하는 달 버튼 -->
+      <div id="date_button" class="row row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="data_button2"><a href="schedule.html">전체</a></div>
+        <div class="data_button2" style ="margin-left:30px;"><a href="#">1월</a></div>
+        <div class="data_button2"style ="margin-left:30px;"><a href="#">2월</a></div>
+        <div class="data_button2"style ="margin-left:30px;"><a href="#">3월</a></div>
+        <div class="data_button2"style ="margin-left:30px;"><a href="#">4월</a></div>
+        <div class="data_button2"style ="margin-left:30px;"><a href="#">5월</a></div>
+        <div class="data_button2"style ="margin-left:30px;"><a href="#">6월</a></div>
+        <div class="data_button2"style ="margin-left:30px;"><a href="schedule_7.html">7월</a></div>
+        <div class="data_button2"style ="margin-left:30px;"><a href="schedule_8.html">8월</a></div>
+        <div class="data_button2"style ="margin-left:30px;"><a href="schedule_9.html" style="color:grey;">9월</a></div>
+        <div class="data_button2"style ="margin-left:30px;"><a href="#">10월</a></div>
+        <div class="data_button2"style ="margin-left:30px;"><a href="#">11월</a></div>
+        <div class="data_button2"style ="margin-left:30px;"><a href="#">12월</a></div>
+      </div>
+      <!--달 버튼 끝-->
+
+      <!-- 축제 스케줄 정보 제공 -->
+            <div class="row align-items-md-stretch">
+
+            <!-- 첫 번째 -->
+            <div class="col-md-6" style=" width:400px; height:600px;">
+              <div class="h-100 p-5 text-white bg-dark rounded-3"  style ="background-image: url('https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=1d5254fa-8302-4ff0-9b1d-418ec3d7076c'); background-size:cover;">
+                <div class="text-center" style="margin-top:500px;">
+                  <button class="btn btn-outline-light" type="button"><a class ="buttona" href="http://wowbookfest.com/">홈페이지로 이동</a></button>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- 두 번째 -->
+            <div class="col-md-6" style=" width:400px; height:600px;">
+              <!-- 백그라운드에 축제 포스터를 주소로 복사해서 넣어주세요. 주소 복사 말고 저장해서 하는 건 안 됩니다! -->
+              <div class="h-100 p-5 bg-light border rounded-3" style ="background-image: url('https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=543915eb-8ff1-4cbd-bfaf-db98dcbe7942'); background-size:cover;">
+                <div class="text-center" style="margin-top:500px;">
+                  <button class="btn btn-outline-light" type="button"><a class ="buttona" href="http://www.k-square.kr">홈페이지로 이동</a></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 세 번째 -->
+            <div class="col-md-6" style=" width:400px; height:600px;">
+                <!-- 백그라운드에 축제 포스터를 주소로 복사해서 넣어주세요. 주소 복사 말고 저장해서 하는 건 안 됩니다! -->
+              <div class="h-100 p-5 bg-light border rounded-3" style ="background-image: url('https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=ed4695fd-714f-4c04-9424-19af2576cb60'); background-size:cover;">
+                <div class="text-center" style="margin-top:500px;">
+                  <button class="btn btn-outline-light" type="button"><a class ="buttona" href="https://www.expo-wg.com">홈페이지로 이동</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 네 번째 -->
+          <div class="row align-items-md-stretch" style="margin-top: 50px;">
+            <div class="col-md-6" style=" width:400px; height:600px;">
+              <div class="h-100 p-5 text-white bg-dark rounded-3" style ="background-image: url('https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=5ca667a9-007f-4059-84b4-173d672e8cdf'); background-size:cover;">
+                <div class="text-center" style="margin-top:500px;">
+                  <button class="btn btn-outline-light" type="button"><a class ="buttona" href="http://hueree.com">홈페이지로 이동</a></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 다섯 번째 -->
+            <div class="col-md-6" style=" width:400px; height:600px;">
+              <div class="h-100 p-5 bg-light border rounded-3" style="background-image: url('https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=5acb3628-7be9-4e5d-a7bf-37e74fad581d'); background-size:cover;">
+                <div class="text-center" style="margin-top:500px;">
+                  <button class="btn btn-outline-light" type="button"><a class ="buttona" href="	https://www.bicfest.org">홈페이지로 이동</a></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 여섯 번째 -->
+            <div class="col-md-6" style=" width:400px; height:600px;">
+              <div class="h-100 p-5 bg-light border rounded-3" style ="background-image: url('https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=810c8921-61ee-4314-bbce-080d4875dca7'); background-size:cover;">
+                <div class="text-center" style="margin-top:500px;">
+                  <button class="btn btn-outline-light" type="button"><a class ="buttona" href="www.djjunggu.go.kr/hyo/index">홈페이지로 이동</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+      <!-- 축제 스케줄정보 제공 끝 -->
+
+  <!--하단부 페이지-->
+  <div class="paging">
+    <nav aria-label="..." style="margin-left:500px; margin-top:100px;">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="Schedule_9_2.html">Previous</a>
+          </li>
+          <!--페이지를 넘기실분은 active를 해당 번호에 맞게 해주시면 됩니다. -->
+          <!--현재 페이지는 span으로 단순 처리했고, 다른 페이지는 넘어갈 수 있게 a태그로 처리해주시면 됩니다.-->
+          <li class="page-item" aria-current="page"><a class="page-link" href="schedule_9.html">1</a></li>
+          <li class="page-item"><a class="page-link" href="Schedule_9_2.html">2</a></li>
+          <li class="page-item active"><span class="page-link">3</span></li>
+
+
+          <!--넘길 페이지를 넣어주세요-->
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!--페이지 끝-->
+
+</main>
+
+<footer id="footer-wrap">
+  <!--페이지 하단부의 우리누리에 관한 정보 시작-->
+    <div id=footer class="container"></div>
+    <div class="copyright">
+      <div class="container" style="padding-top:50px;">
+        <div id = "footer"class="row">
+          <div class="col-md-12 col-sm-12">
+            <p>© 2021 All Rights Reserved. <a href="/">우리누리 링크 </a>&nbsp;|&nbsp;
+              <a href="/terms">서비스 약관</a>&nbsp;|&nbsp;
+              <a href="/privacy">개인정보 보호</a>&nbsp;|&nbsp;
+              <a href="/terms/payment">결제 이용 약관</a>&nbsp;|&nbsp;
+              <a href="mailto:00000@smu.ac.kr">도움말</a>&nbsp;|&nbsp;
+              <a href="mailto:00000@smu.ac.kr">광고 문의</a>&nbsp;|&nbsp;
+              <a href="mailto:00000@smu.ac.kr">업데이트 노트</a>&nbsp;|&nbsp;
+              <a href="mailto:00000@smu.ac.kr">이슈</a>&nbsp;|&nbsp;
+              <a href="mailto:00000@smu.ac.kr">TODO</a>
+            </p>
+            </div>
+            </div>
+            <div id =footer class="row">
+              <div class="col-sm-12">
+                <a href="/" class="hidden-xs" style="width:30%; float:right;"><img src="static\image\URINURILOGO4.png" class="pull-right startlink-logo"></a>
+                <ul class="list-unstyled simple-list" style="width:70%; float:left; margin-top:50px;" >
+                  <li>사업자 등록 번호: 000-00-00000</li>
+                  <li>대표자명: 우리누리</li>
+                  <li>주소: 서울특별시 종로구 홍지동 홍지문2길 20</li>
+                  <li>전화번호: 02-000-0000 (이메일로 연락 주세요)</li>
+                  <li>이메일: <a href="mailto:00000@smu.ac.kr">OOOO0@smu.ac.kr</a></li>
+                  <li>통신판매신고번호: 제 0000-0000-0000 호</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+          <p id="no-acm-icpc">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;이 사이트는 상명대학교 컴퓨터과학 캡스톤 디자인을 위해 만들어졌으며 어떠한 금전적 대가도 받지 않고 있습니다.
+          </p>
+
+
+  </footer>
+  <!--하단 우리누리 정보-->
+  <script src="/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!--축제정보 넣는 부분 끝-->
+
+      <!-- Optional JavaScript; choose one of the two! -->
+
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+      <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+</html>

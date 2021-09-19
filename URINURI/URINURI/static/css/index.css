@@ -1,0 +1,131 @@
+/* body{padding-top: 70px;} */
+#myCarousel{height: auto;}
+header{
+  height: 56px;
+}
+
+/* 슬라이드 넘기는 버튼 구성 */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
+}
+
+
+
+/*메인페이지 컨테인부분*/
+.container{
+      margin-top: 100px;
+}
+/*3개 나란히 있는 버튼*/
+.carousel-indicators{
+  top: 100px;
+
+}
+/*About페이지*/
+.position-relative {
+  background-image: url(static/image/001.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+}
+.copyright a{
+  text-decoration: none;
+
+}
+.bd-placeholder-img{
+
+}
+/*중단부분 현재페이지에서 다른 페이지로 넘어가는 부분의 이미지를 이미지 자체 설정해놓은 크기로 설정하는 */
+.ab_row img{
+  object-fit: none;
+
+}
+
+
+/*연결 페이지로 넘겨주는 a테그의 색상을 변경하고 hover 효과에 따라 다른 색을 주는 것.*/
+.ab_row a{
+
+   background-color: #ffd3d7;
+   border-color: #ffd3d7;
+   color: #FFF;
+
+}
+.ab_row a:hover,
+.ab_row a:focus {
+   background-color: #fff;
+   border-color: #fff;
+   color: #ffd3d7;
+  }
+.row_1 a{
+
+   background-color: #c5d6db;
+   border-color: #c5d6db;
+   color: #FFF;
+
+}
+.row_1 a:hover,
+.row_1 a:focus {
+   background-color: #fff;
+   border-color: #fff;
+   color: #c5d6db ;
+  }
+
+#footer.container{
+  height:100px;
+  width:100%;
+  background-color:#FFF;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+}
+
+
+#footer-wrap li,
+#footer-wrap p{
+color: #959ca0;
+
+}
+
+.copyright{
+  background-color:#353c41;
+
+}
+#no-acm-icpc{
+  background-color:#red;
+  margin-bottom: 0px;
+  padding-bottom: 16px;
+  padding-top: 5px;
+  background-color:#2a2f33;
+  text-decoration-style: solid;
+}
+
+#footer.row a:link{
+  text-decoration: none;
+}
+#footer.row a{
+  color: #D6D3D3;
+}
+#footer.row a:hover{
+  text-decoration: underline;
+
+}

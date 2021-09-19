@@ -1,0 +1,228 @@
+html,body{
+  height: 100%;
+  margin:0;
+  font-family: sans-serif;
+}
+.wrap{
+  max-width: 1130px;
+  margin: auto;
+  height: 100%;
+}
+
+.menu{
+  height: 76px;
+  display: flex;
+  align-items: center;
+}
+.menu > .wrap{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #fff;
+
+}
+.logo > a{
+  float: left;
+  font-size: 25px;
+  font-weight: bold;
+  color: #000;
+}
+.logo > a:hover{
+  background: #ddd;
+  color: black;
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+.nav > li{
+  margin: 0 24px;
+}
+.nav > li > a{
+  color: #000;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 30px 20px;
+}
+.nav > li > a:hover{
+  background: #ddd;
+  color: black;
+}
+/* 컨텐츠 섹션*/
+.content-section{
+  margin: auto;
+  background: #c4d6da;
+  min-height: 400px;
+  height: calc(100% - 152px);
+  text-align: center;
+}
+.content{
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+}
+/*검색박스*/
+.searchbox{
+  text-align: left;
+  position: relative;
+  margin: auto;
+  display: flex;
+  width: 450px;
+  border: 2px solid #0881ff;
+  background: #fff;
+  box-shadow: 0 6px 15px 0px rgba(0,0,0,0.15);
+  border-radius: 25px;
+  top: 0;
+  transition: box-shadow ease-in-out 150ms, top ease-in-out 150ms;
+}
+.searchbox:hover{
+  box-shadow: 0 10px 20px 0px rgba(0,0,0,0.3);
+  top: -6px;
+}
+.searchbox > input[type='text']{
+  flex: 1;
+  padding: 4px;
+  margin: 12px 76px 12px 24px;
+  font-size: 16px;
+  border: none;
+}
+.searchbox > button{
+  position: absolute;
+  padding: 8px;
+  width: 64px;
+  height: 100%;
+  right: -1px;
+  background: #0881ff;
+  color: #fff;
+  font-size: 18px;
+  border: 1px solid #0881ff;
+  cursor: pointer;
+  border-radius: 0 25px 25px 0;
+}
+
+.search-filter{
+  margin: 24px auto;
+  display: inline-flex;
+}
+.search-filter > div{
+  margin-right: 8px;
+}
+.search-filter > div:last-child{
+  margin-right: 0px;
+}
+
+.foot{
+  height: 76px;
+  display: flex;
+  align-items: center;
+}
+.foot > .wrap{
+  width:100%;
+  display: flex;
+  align-items: center;
+  background: #fff;
+}
+
+input,textarea,select,button{
+  outline: 0;
+}
+button:focus{
+  outline: 0;
+}
+
+.dateinput{
+  text-align: left;
+  position: relative;
+  display: inline-block;
+  border-radius: 50px;
+  padding: 8px 12px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  background: #fff;
+  box-shadow: 0 6px 15px 0px rgba(0,0,0,0.15);
+}
+
+.dateinput > span:first-child{
+  margin-left: 0;
+  font-size: 12px;
+  margin-right: 8px;
+  font-weight: bold;
+}
+.dateinput_div > span{
+  color: #0881ff;
+  font-size: 12px;
+  margin: 0 4px;
+}
+.dateinput_div > input{
+  width: 84px;
+  padding: 6px;
+  border: none;
+  font-size: 14px;
+  border-radius: 4px;
+  background: #ddd;
+  color: #545454;
+}
+
+.dropdown{
+  text-align: left;
+  position: relative;
+  display: inline-block;
+}
+.dropselect{
+  min-width: 70px;
+  border-radius: 25px;
+  height: 22px;
+  padding: 8px 24px 8px 12px;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  font-size: 14px;
+  background: #0881ff;
+  color: #fff;
+  cursor: pointer;
+  transition: background ease-in-out 150ms;
+  box-shadow: 0 6px 15px 0px rgba(0,0,0,0.15);
+}
+.dropselect:hover{
+  background: #1065bd;
+}
+.dropselect:before{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top:14px;
+  right:12px;
+  border-width: 3px;
+  border-style: solid;
+  transform: rotate(45deg);
+  border-color: transparent #fff #fff transparent;
+}
+
+.droplists{
+  position: absolute;
+  background: #fff;
+  border-radius: 4px;
+  width: 100%;
+  overflow-y: auto;
+    max-height: 300px;
+  box-shadow: 0 6px 15px 0px rgba(0,0,0,0.15);
+}
+.droplists > *{
+  display: block;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background ease-in-out 150ms;
+}
+.droplists > *:hover, .droplists > .select{
+  background: #eee;
+}
